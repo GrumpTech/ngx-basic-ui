@@ -1,4 +1,19 @@
 {
-  "name": "ngx-basic-ui",
-  "version": "1.0.0"
+  "name": "@grumptech/ngx-basic-ui",
+  "version": "1.0.1",
+  "description": "basic Angular ui components",
+  "author": "GrumpTech",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GrumpTech/ngx-basic-ui.git"
+  },
+  "keywords": [
+    "Angular",
+    "components"
+  ],
+  "bugs": {
+    "url": "https://github.com/GrumpTech/ngx-basic-ui/issues"
+  },
+  "homepage": "https://github.com/GrumpTech/ngx-basic-ui#readme"
 }
