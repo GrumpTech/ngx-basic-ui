@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import stringify from 'json-stable-stringify';
 import JSON5 from 'json5';
 
 @Injectable({ providedIn: 'root' })
@@ -10,6 +11,11 @@ export class JsonFormatter {
     } catch {
       return data;
     }
-    return JSON5.stringify(object);
+    return (
+      stringify(object, {
+        space: '  ',
+        collapseEmpty: true,
+      }) ?? ''
+    );
   }
 }

@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { CodeEditor } from "@grumptech/ngx-basic-ui/code-editor";
+import { CodeEditor } from '@grumptech/ngx-basic-ui/code-editor';
 
 @Component({
   selector: 'code-editor',
