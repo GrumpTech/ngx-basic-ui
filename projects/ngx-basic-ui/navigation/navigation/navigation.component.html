@@ -3,7 +3,6 @@
     @for (item of menuItems; track item) {
       @if (item.url) {
         <a
-          mat-list-item
           [style.paddingLeft.px]="item.level * 10 + 10"
           [relativeTo]="relativeTo()"
           [routerLink]="urlPrefix() + item.url"

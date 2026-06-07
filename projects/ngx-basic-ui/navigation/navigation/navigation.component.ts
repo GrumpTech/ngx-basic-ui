@@ -6,7 +6,6 @@ import {
   input,
 } from '@angular/core';
 import { ActivatedRoute, RouterLink, RouterLinkActive } from '@angular/router';
-import { MatListModule } from '@angular/material/list';
 import { MenuItem } from '../models';
 
 interface FlatMenuItem {
@@ -20,7 +19,7 @@ interface FlatMenuItem {
   templateUrl: 'navigation.component.html',
   styleUrl: 'navigation.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [MatListModule, RouterLink, RouterLinkActive],
+  imports: [RouterLink, RouterLinkActive],
 })
 export class Navigation implements OnChanges {
   readonly urlPrefix = input('');
