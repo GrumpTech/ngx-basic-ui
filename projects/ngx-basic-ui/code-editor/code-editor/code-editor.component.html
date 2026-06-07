@@ -1,0 +1,14 @@
+<div class="scroll" [class.disabled]="disabled()">
+  <textarea
+    cdkTextareaAutosize
+    [id]="id"
+    [style.color]="disabled() ? 'rgba(0, 0, 0, 0.5)' : ''"
+    [formControl]="formControl"
+    spellcheck="false"
+  ></textarea>
+</div>
+@if (warningMessage()) {
+  <div class="warning-message">
+    <div class="warning-message_text">{{ warningMessage() }}</div>
+  </div>
+}

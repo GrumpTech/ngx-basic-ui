@@ -1,0 +1,30 @@
+{
+  "name": "demo",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build ngx-basic-ui --configuration production",
+    "publish": "cd dist/ngx-basic-ui && npm publish",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "lint": "ng lint"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/cdk": "^21.2.13",
+    "@angular/common": "~21.2.15",
+    "@angular/core": "~21.2.15",
+    "@angular/forms": "^21.2.15",
+    "@angular/material": "^21.2.13",
+    "@angular/platform-browser": "~21.2.15",
+    "@angular/router": "~21.2.15"
+  },
+  "devDependencies": {
+    "@angular/build": "^21.2.13",
+    "@angular/cli": "~21.2.13",
+    "@angular/compiler-cli": "~21.2.15",
+    "ng-packagr": "^21.2.3",
+    "prettier": "^3.8.3"
+  }
+}

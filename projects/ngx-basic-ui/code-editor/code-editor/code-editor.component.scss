@@ -1,0 +1,58 @@
+@use "../../thin-scrollbars";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.scroll {
+  display: block;
+  flex: 1;
+  border-radius: 4px;
+  border: 1px solid gray;
+  padding: 6px;
+  min-width: 0;
+  @include thin-scrollbars.scrollbars;
+
+  &.disabled {
+    background-color: rgba(0, 0, 0, 0.03);
+    border-color: lightgray;
+    cursor: text;
+  }
+}
+
+textarea {
+  resize: none;
+  white-space: pre;
+  field-sizing: content;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  min-width: 100%;
+  background-color: transparent;
+}
+
+.warning-message {
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: 0.5em;
+  border-radius: 0.5em;
+  background-color: #f44336;
+  height: 2em;
+  width: 100%;
+}
+.warning-message_text {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.33em 0.43em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: white;
+}

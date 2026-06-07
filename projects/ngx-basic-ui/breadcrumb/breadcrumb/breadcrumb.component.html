@@ -1,0 +1,20 @@
+@if (parts().length) {
+  <div class="breadcrumb">
+    @for (
+      part of parts();
+      track trackFn(part, index);
+      let index = $index, last = $last
+    ) {
+      @if (part.url) {
+        <a [relativeTo]="relativeTo()" [routerLink]="urlPrefix() + part.url">{{
+          part.label
+        }}</a>
+      } @else {
+        <span>{{ part.label }}</span>
+      }
+      @if (!last) {
+        <span class="separator">&gt;</span>
+      }
+    }
+  </div>
+}

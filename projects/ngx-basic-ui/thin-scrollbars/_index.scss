@@ -1,0 +1,19 @@
+@mixin scrollbars {
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  &::-webkit-scrollbar-corner {
+    display: none;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: #aaa;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 4px;
+    background: #eee;
+  }
+}
