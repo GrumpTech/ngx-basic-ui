@@ -1,6 +1,6 @@
 {
   "name": "@grumptech/ngx-basic-ui",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "basic Angular ui components",
   "author": "GrumpTech",
   "license": "MIT",
@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/GrumpTech/ngx-basic-ui#readme",
   "peerDependencies": {
-    "@angular/cdk": "^21.0.0",
-    "@angular/core": "^21.0.0",
-    "@angular/forms": "^21.0.0"
+    "@angular/cdk": ">=21.0.0",
+    "@angular/core": ">=21.0.0",
+    "@angular/forms": ">=21.0.0"
   }
 }
